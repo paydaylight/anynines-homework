@@ -13,7 +13,7 @@ class ArticleRoutes < Sinatra::Base
   end
 
   get('/') do
-    summmary = @articleCtrl.get_batch
+    summary = @articleCtrl.get_batch
 
     if !(summary[:ok])
       { articles: summary[:data] }.to_json
@@ -23,7 +23,7 @@ class ArticleRoutes < Sinatra::Base
   end
 
   get('/:id') do
-    
+
   end
 
   post('/') do
