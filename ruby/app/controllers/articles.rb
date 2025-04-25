@@ -35,8 +35,6 @@ class ArticleController
     else
       { ok: false, msg: 'Article not found' }
     end
-  rescue StandardError
-    { ok: false }
   end
 
   def delete_article(id)
@@ -50,7 +48,8 @@ class ArticleController
   end
 
   def get_batch
-    res = Article.all
+    # TODO: Add pagination
+    res = Article.all.order(created_at: :desc)
 
     if res.present?
       { ok: true, data: res }
