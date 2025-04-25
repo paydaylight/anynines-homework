@@ -1,4 +1,4 @@
 *lock
 .ruby-env
 .ruby-version
-.idea/
+../.idea/
