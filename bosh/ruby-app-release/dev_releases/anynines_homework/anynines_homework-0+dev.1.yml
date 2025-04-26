@@ -1,0 +1,23 @@
+name: anynines_homework
+version: 0+dev.1
+commit_hash: ce9339b
+uncommitted_changes: true
+jobs:
+- name: rubyweb
+  version: 3a948f510ebd40cfbb9831e34f10cc546fc6786dd5cf28efc68ae2f3c2cfb119
+  fingerprint: 3a948f510ebd40cfbb9831e34f10cc546fc6786dd5cf28efc68ae2f3c2cfb119
+  sha1: sha256:5b980f16c6139693ac9f1d57d64503ee925cf2e75556149c510865faaa6047fd
+  packages:
+  - rubyweb
+packages:
+- name: ruby-2.7
+  version: 65be1e4d2f3bf2f828a861cd17b220492ad5c6680e1a3a320cf1179ed20b8609
+  fingerprint: 65be1e4d2f3bf2f828a861cd17b220492ad5c6680e1a3a320cf1179ed20b8609
+  sha1: sha256:8c99aa93b5e2f1bc8437d1bbbefd27b13e7694025331f77245d0c068ef1f8cbe
+  dependencies: []
+- name: rubyweb
+  version: c83678f978ddcb920e2c265d4c9f4f9044c79e75331b059074dda75d0a82c9a6
+  fingerprint: c83678f978ddcb920e2c265d4c9f4f9044c79e75331b059074dda75d0a82c9a6
+  sha1: sha256:d9d0dac65a15673c0a10fe48e888c49e671b63148bdde5b51f440bb0f4e395de
+  dependencies:
+  - ruby-2.7

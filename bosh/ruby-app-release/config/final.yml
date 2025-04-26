@@ -1,3 +1,4 @@
+name: anynines_homework
 blobstore:
   provider: local
   options:
