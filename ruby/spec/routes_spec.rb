@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'rack/test'
-require 'rspec/autorun'
 require 'json'
 require 'base64'
 require_relative '../app/middleware/auth'
@@ -71,7 +70,7 @@ describe ArticleRoutes do
   context 'testing the create article endpoint ' do
     let(:response) do
       post '/', JSON.generate('title' => 'Route Test Article', 'content' => 'test content'),
-      prepare_headers 
+      prepare_headers
     end
 
     it 'checks response status and body' do
